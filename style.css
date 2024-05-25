@@ -1,0 +1,235 @@
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(160deg, #112d4e 0%, #3f72af 100%);
+    color: white;
+}
+
+h1{
+    text-align: center;
+    padding-top: 30px;
+    
+}
+
+.tab-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20rem;
+    margin-top: 3rem;
+    cursor: pointer;
+}
+
+.tab{
+    font-size: 1rem;
+    letter-spacing: 1.75px;
+    padding: 5px 8px;
+}
+
+
+.tab.current-tab{
+    background-color: rgba( 219, 226, 239, 0.5);
+    /* padding: 1px; */
+    border-radius: 4px;
+}
+
+.form-container.active{
+    opacity: 1;
+    scale: 1;
+}
+
+
+.weather-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sub-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.grant-location-container{
+    display: none;
+}
+
+.grant-location-container.active{
+    display: flex;
+    margin-top: 60px;
+}
+
+.grant-location-container p:first-of-type{
+   font-size: 19px;
+   font-weight: 500;
+}
+
+.grant-location-container p:last-of-type{
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    letter-spacing: 1.2px;
+}
+
+.btn{
+    cursor: pointer;
+    margin: 2px 2px;
+    padding: 7px 22px;
+    border-radius: 2px;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    letter-spacing: 1.24px;
+    background-color: #3f72af;
+    color: white;
+    font-weight: bold;
+}
+
+.loading-container{
+    display: none;
+}
+
+.loading-container.active{
+    display: flex;
+}
+
+.loading-container p:first-of-type{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.user-info-container{
+    display: none;
+}
+
+.user-info-container.active{
+    display: flex;
+    margin-top: 40px;
+}
+
+.name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.name p[data-city-name]{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.name img[data-country-icon]{
+    width: 30px;
+    height: 30px;
+}
+
+.user-info-container p[data-weatherDesc]{
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: -10px;
+    font-weight: bold;
+}
+
+.user-info-container img[data-weatherIcon]{
+    width: 90px;
+    height: 90px;
+}
+
+.user-info-container p[data-temp]{
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.parameter-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parameter{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-top: 30px;
+    /* background-color: green; */
+    padding: 20px;
+    background-color: rgba(219, 226, 239, 0.5);
+    border-radius: 15px;
+    height: 200px;
+    width: 220px;
+}
+
+.parameter p{
+    margin-left: 60px;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+.parameter h3{
+    margin-left: 32px;
+    margin-top: 5px;
+}
+
+.parameter img{
+    width: 60%;
+    height: 60%;
+    margin-left: 33px;
+}
+
+.form-container {
+    display: none;   
+}
+
+.form-container.active {
+    display: flex;
+    width: 30%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.form-container input {
+    /* all: unset; */
+    width: calc(100% - 80px);
+    height: 30px;
+    padding: 0px 10px;
+    background-color: rgba( 219, 226, 239, 0.5);
+    border-radius: 10px;
+    margin-right: 7px;
+    color: white;
+    font-weight: bold;
+}
+
+.form-container input::placeholder {
+    color: white;
+    font-weight: bold;
+}
+
+.form-container input:focus{
+    outline: 3px solid rgba(255, 255, 255, 0.7);
+}
+
+.form-container .btn{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    margin-bottom:1px;
+}
